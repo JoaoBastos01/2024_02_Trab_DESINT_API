@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho API e JSON</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="main.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Página de Utilidade Pública</h1>
+        <p>Explore dados interessantes sobre países e utilize serviços públicos.</p>
+    </header>
+    <main>
+        
+        <section id="countries">
+            <h2>Países</h2>
+            <p>Escolha um país para visualizar suas informações.</p>
+            <select id="countrySelect"></select>
+            <pre id="countryDetails"></pre>
+        </section>
+
+        <section id="bankSearch">
+            <h2>Informações de Bancos</h2>
+            <p>Digite o código de um banco brasileiro para visualizar seu nome, código e ISPB.</p>
+            <form id="bankForm">
+                <label for="bankCode">Código do Banco:</label>
+                <input type="text" id="bankCode" placeholder="Digite o código do banco" required>
+                <button type="submit">Buscar</button>
+            </form>
+            <pre id="bankResult"></pre>
+        </section>
+    
+        <section id="cepSearch">
+            <h2>Busca por CEP</h2>
+            <p>Digite um CEP válido com 8 dígitos e descubra informações como endereço, cidade e estado.</p>
+            <form id="cepForm">
+                <label for="cepInput">Informe o CEP:</label>
+                <input type="text" id="cepInput" placeholder="Digite o CEP" required>
+                <button type="submit">Buscar</button>
+            </form>
+            <pre id="cepResult"></pre>
+        </section>
+
+        <section id="feriados">
+            <h2>Feriados Nacionais no Brasil</h2>
+            <button id="fetchHolidays">Buscar Feriados</button>
+            <pre id="holidayResults"></pre>
+        </section>
+
+    </main>
+</body>
+</html>
